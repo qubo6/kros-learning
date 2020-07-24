@@ -1,0 +1,23 @@
+.header, .body, .footer {
+  position: absolute;
+  width: 320px;
+}
+
+.header {
+  top: 0;
+  height: 70px;
+  padding: 1rem;
+}
+
+.body {
+  top: 75px;
+  bottom: 105px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.footer {
+  bottom: 0;
+  height: 100px;
+}
+

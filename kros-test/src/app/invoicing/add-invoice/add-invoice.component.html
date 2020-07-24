@@ -1,0 +1,9 @@
+<form [formGroup]="invoiceForm">
+  <input class="form-control"
+        type="text"
+        formControlName="name"
+        placeholder="Pridat fakturu">
+  <button type="button"
+          class="btn btn-primary add-btn"
+          (click)="addInvoice()">Pridaj fakturu</button>
+</form>

@@ -1,0 +1,16 @@
+<aside>
+  <div class="header">
+    <input #search
+        class="form-control"
+        type="search"
+        (input)="filter(search.value)">
+  </div>
+  <div class="body">
+    <ul *ngFor="let invoice of invoices" class="list-group">
+        <app-invoice-item [invoice]="invoice"></app-invoice-item>
+    </ul>
+  </div>
+  <div class="footer">
+    <app-side-bar-footer></app-side-bar-footer>
+  </div>
+</aside>
