@@ -37,11 +37,13 @@ export class InvoicingService {
   }
 
   addInvoice(title: string) {
-    this.invoices.push({
-      id: 0,
-      titile: title,
-      price: this.numberGenerator()
-    }as Invoice);
+    if(title.length > 0) {
+      this.invoices.push({
+        id: 0,
+        titile: title,
+        price: this.numberGenerator()
+      }as Invoice);
+    }
   }
 
   private stringGenerator(): string {

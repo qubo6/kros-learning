@@ -1,6 +1,6 @@
 .header, .body, .footer {
   position: absolute;
-  width: 320px;
+  width: 319px;
 }
 
 .header {
@@ -17,6 +17,9 @@
 }
 
 .footer {
+  border-top: inset;
+  border-width: 1px;
+  border-color: rgb(194, 180, 180);
   bottom: 0;
   height: 100px;
 }

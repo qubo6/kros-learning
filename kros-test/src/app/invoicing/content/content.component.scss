@@ -1,5 +1,7 @@
 .side-bar-wrapper {
-  border-right: 10px;
+  border-right: inset;
+  border-width: 1px;
+  border-color: rgb(194, 180, 180);
   float: left;
   width: 320px;
   height: 100%;

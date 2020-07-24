@@ -22,10 +22,8 @@ export class AddInvoiceComponent implements OnInit {
   }
 
   addInvoice() {
-    if (this.invoiceForm.value) {
       this.invoicingService.addInvoice(this.invoiceForm.get('name').value);
       this.invoiceForm.controls.name.setValue('');
-    }
   }
 
 }
